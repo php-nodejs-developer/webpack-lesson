@@ -1,0 +1,27 @@
+body {
+  background: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  background-color: #F48FB1;
+}
+
+%info {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+.important {
+  @extend %info;
+  background-color: #990000;
+  color: #fbe9e7;
+}
+
+.base {
+  @extend %info;
+  background-color: yellowgreen;
+  color: white;
+}

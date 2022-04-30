@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+    <!--<link rel="stylesheet" href="css/index.css">-->
+</head>
+<body>
+
+<h2 class="title">Главная страница</h2>
+
+<section class="carousel-section">
+    <div class="carousel">
+        <div class="slide active"><!--<img class="image" src="images/slides/slide1.jpg">--></div>
+        <div class="slide"><!--<img class="image" src="images/slides/slide2.jpg">--></div>
+        <div class="slide"><!--<img class="image" src="images/slides/slide3.jpg">--></div>
+
+        <div class="btn carousel__btn_previous carousel__btn_hovered">&#10687;</div>
+        <div class="btn carousel__btn_next carousel__btn_hovered">&#10687;</div>
+    </div>
+</section>
+
+<% for (var js in htmlWebpackPlugin.files.js) { %>
+<script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
+<% } %>
+
+<!--<script src="js/index.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+    <!--<link rel="stylesheet" href="css/contacts.css">-->
+</head>
+<body>
+
+<h2 class="title">Контакты</h2>
+
+<address class="important">Телефон: +4846317713</address>
+<address class="base">Email: mail@gmail.com</address>
+
+<% for (var js in htmlWebpackPlugin.files.js) { %>
+<script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
+<% } %>
+
+
+<!--<script src="js/contacts.js"></script>-->
+</body>
+</html>
