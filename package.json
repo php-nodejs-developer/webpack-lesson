@@ -6,9 +6,9 @@
     "webpack",
     "minimizers"
   ],
-  "author": "web-ifmo",
+  "author": "php-nodejs-developer",
   "license": "ISC",
-  "homepage": "https://github.com/ifmo-web/javascript/tree/master/webpack-lesson",
+  "homepage": "https://github.com/php-nodejs-developer/webpack-lesson",
   "devDependencies": {
     "@babel/core": "7.16.0",
     "@babel/preset-env": "^7.16.4",
