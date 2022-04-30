@@ -27,7 +27,6 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "webpack-dev-server": "^4.6.0"
-
   },
   "scripts": {
     "dev": "webpack --mode=development",
@@ -35,3 +34,7 @@
     "serve": "webpack serve"
   }
 }
+
+
+
+
